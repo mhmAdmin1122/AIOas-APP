@@ -3,7 +3,7 @@ import logo from "../public/img/logo.png";
 import Link from "next/link";
 import searchIco from "../public/img/search.png";
 import Head from "next/head";
-import { use, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isHovering, setIsHovering] = useState(false);
@@ -15,6 +15,23 @@ export default function Navbar() {
   const handleMouseOut = () => {
     setIsHovering(false);
   };
+  const [isSticky, setIsSticky] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.pageYOffset > 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
   return (
     <>
@@ -27,7 +44,7 @@ export default function Navbar() {
         />
       </Head>
 
-      <nav className="Navbar">
+      <nav className={`Navbar ${isSticky ? "sticky" : ""}`}>
         <div className="logoConatiner">
           <Link href="/">
             <div className="logoBox">

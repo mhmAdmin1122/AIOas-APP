@@ -25,9 +25,10 @@
   padding: 0px;
 }
 .logoConatiner {
-  width: 5%;
+  width: 7%;
   display: flex;
   align-items: center;
+  padding: 12px;
 }
 .tabsBox {
   width: 76%;
@@ -96,10 +97,12 @@
 .tabsList p:hover::after {
   width: 90%;
 }
-.serchBox {
+.serchBox{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4px 8px;
+  margin: 0px 4px 0px 0px;
 }
 .search_Input {
   width: 80%;
@@ -676,4 +679,14 @@
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+}
+/* sticky Navbar */
+
+.Navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 1px;
+  background: #fff;
+  z-index: 99999999999999999999999;
 }
