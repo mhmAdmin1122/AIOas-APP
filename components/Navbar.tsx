@@ -6,7 +6,9 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  
   const [isHovering, setIsHovering] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const handleMouseOver = () => {
     setIsHovering(true);
@@ -15,26 +17,27 @@ export default function Navbar() {
   const handleMouseOut = () => {
     setIsHovering(false);
   };
-  const [isSticky, setIsSticky] = useState(false);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.pageYOffset > 0) {
-          setIsSticky(true);
-        } else {
-          setIsSticky(false);
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
+
     <>
+
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -56,7 +59,6 @@ export default function Navbar() {
 
         <div className="tabsBox">
           <ul className="tabs">
-
             <li className="tabsList">
               <Link href="/" className="tabsLink">
                 Home
@@ -70,8 +72,7 @@ export default function Navbar() {
                   onClick={handleMouseOut}
                   onMouseOver={handleMouseOver}
                 >
-                  <p>Services</p> 
-
+                  <p>Services</p>
                 </h1>
               </li>
 
@@ -134,7 +135,9 @@ export default function Navbar() {
           </form>
         </div>
       </nav>
+
     </>
+
   );
 }
 
