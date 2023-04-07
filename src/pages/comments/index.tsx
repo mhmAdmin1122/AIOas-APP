@@ -36,6 +36,12 @@ export default function index() {
   //   fetchComments()
   // });
 
+  interface type {
+    id: number;
+    text: string;
+  }
+   
+
   return (
     <>
       <Head>
@@ -80,7 +86,7 @@ export default function index() {
           </div>
           {hideComments && (
             <div className="commentsShowBox">
-              {comments.map((comments) => {
+              {comments.map((comments:type) => {
                 return (
                   <>
                     <h1 key={comments.id}>{comments.id}</h1>
