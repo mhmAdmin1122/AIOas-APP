@@ -13,6 +13,7 @@ export default function allTools() {
                 <li className="toolsList"><Link href="/">Wave Generator</Link></li>
                 <li className="toolsList"><Link href="/">Makes Projects Slides</Link></li>
                 <li className="toolsList"><Link href="/">Design A Logo</Link></li>
+                <li className="toolsList"><Link href="/TypingTools">Typing Tool</Link></li>
             </ul>
         </div>
     </>

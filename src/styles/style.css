@@ -552,10 +552,10 @@
   border-radius: 0px 0px 12px 12px;
   font-size: 23px;
 }
-.showdatabox::-webkit-scrollbar{
+.showdatabox::-webkit-scrollbar, .typing-Area::-webkit-scrollbar {
   width: 8px;
 }
-.showdatabox::-webkit-scrollbar-thumb{
+.showdatabox::-webkit-scrollbar-thumb, .typing-Area::-webkit-scrollbar-thumb{
   width: 8px;
   background: #5c00a7;
   border-radius: 12px;
@@ -689,4 +689,89 @@
   left: 1px;
   background: #fff;
   z-index: 99999999999999999999999;
+}
+.tabsList p{
+  top: 5px;
+}
+.tabs{
+  margin: 0px !important;
+}
+
+/* typing tool */
+.btnConatiner .btnBox {
+  background: #ECECEC;
+  padding: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 22px 22px 0px 0px;
+  margin: 10px 0px 0px 0px !important;
+  width: 100%;
+  border: 2px solid #6500a5;
+  border-top: 11px solid #5c00a7;
+  border-left: 2px solid #5c00a7;
+  border-right: 2px solid #5c00a7;
+  border-bottom: 2px solid #5c00a7;
+}
+.typing-Area {
+  width: 100%;
+  padding: 20px;
+  max-height: 406px;
+  min-height: 405px;
+  margin: 0px 0px 0px !important;
+  border-radius: 0px 0px 22px 22px !important;
+  height: 166px;
+  outline: none;
+  border-bottom: 11px solid #5c00a7;
+  border-left: 2px solid #5c00a7;
+  border-right: 2px solid #5c00a7;
+  border-top: 2px solid #5c00a7;
+}
+.timer{
+  background: #999595b5;
+  color: #ececec;
+  width: 90px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px 0px 0px 0px;
+  box-shadow: 6px 2px 47px black inset;
+  cursor: pointer;
+}
+.timerContainer{
+  bottom: -15.5px;
+  right: -12px;
+}
+
+/* stopwatch */
+.stopwatch-container{
+  background-color: #000;
+}
+.stopwatch-time {
+  text-align: center;
+  color: #fff;
+  font-size: 80px;
+}
+
+.stopwatch-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.stopwatch-buttons button {
+  margin: 20px;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.stopwatch-buttons button:first-child {
+  background-color: green;
+}
+
+.stopwatch-buttons button:last-child {
+  background-color: red;
 }
