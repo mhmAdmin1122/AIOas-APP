@@ -2,11 +2,9 @@ import Image from "next/image";
 import logo from "../public/img/logo.png";
 import Link from "next/link";
 import searchIco from "../public/img/search.png";
-import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  
   const [isHovering, setIsHovering] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -35,18 +33,7 @@ export default function Navbar() {
   }, []);
 
   return (
-
     <>
-
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lily+Script+One&family=Lobster&family=Roboto+Condensed&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-
       <nav className={`Navbar ${isSticky ? "sticky" : ""}`}>
         <div className="logoConatiner">
           <Link href="/">
@@ -135,9 +122,7 @@ export default function Navbar() {
           </form>
         </div>
       </nav>
-
     </>
-
   );
 }
 

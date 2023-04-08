@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Bebas+Neue&family=Fruktur:ital@0;1&family=Lily+Script+One&family=Lobster&family=Pacifico&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 ::selection {
   background-color: #ececec;
   color: #5c00a7;
@@ -271,7 +272,7 @@
 }
 /* News Page */
 .NewsCardBox {
-  width: 261px;
+  width: 300px;
   height: 380px;
   border: 1px solid grey;
   border-radius: 12px;
@@ -404,10 +405,13 @@
   align-items: center;
   justify-content: center;
 }
+a{
+  text-decoration: none !important;
+}
 .PostDataContainer {
   display: grid;
   align-items: center;
-  width: 220px;
+  width: 300px;
   height: 340px;
   border: 2px solid #c4c2c2a8;
   padding: 36px;
@@ -713,23 +717,73 @@
   border-bottom: 2px solid #5c00a7;
 }
 .typing-Area {
-  width: 100%;
+  width: 70%;
   padding: 20px;
   max-height: 406px;
   min-height: 405px;
   margin: 0px 0px 0px !important;
-  border-radius: 0px 0px 22px 22px !important;
-  height: 166px;
+  border-radius: 0px 0px 0px 22px !important;
   outline: none;
   border-bottom: 11px solid #5c00a7;
   border-left: 2px solid #5c00a7;
   border-right: 2px solid #5c00a7;
   border-top: 2px solid #5c00a7;
 }
+.textSummaryBox {
+  width: 30%;
+  background: #ededed;
+  box-shadow: 6px 5px 68px #adababb3 inset;
+  border-bottom: 11px solid #5c00a7;
+  border-left: 2px solid #5c00a7;
+  border-right: 2px solid #5c00a7;
+  border-top: 2px solid #5c00a7;
+  max-height: 406px;
+  min-height: 405px;
+  margin: 0px 0px 0px !important;
+  border-radius: 0px 0px 22px 0px!important;
+  padding: 20px;
+}
+.textSummaryBox h1{
+  font-family: 'Bebas Neue';
+  margin: 0px;
+  text-align: center;
+  padding: 4px;
+  font-size: 30px;
+  font-weight: 500;
+  background: linear-gradient(182deg, #6500a5, #b267e1c7, #481a64c2);
+  border-radius: 4px;
+  color: #e3dede;
+  cursor: context-menu;
+}
+.textSummaryBox h2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-family: 'Alkatra';
+  font-weight: 600;
+  margin: 4px 0px;
+}
+.textSummaryBox h2 p{
+  margin: 0px;
+}
+.textSummaryBox h2 b{
+  margin: 0px;
+  padding: 6px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+}
+.typingFormBox{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0px !important;
+}
 .timer{
   background: #999595b5;
   color: #ececec;
-  width: 90px;
+  width: 120px;
   padding: 2px;
   display: flex;
   align-items: center;
@@ -775,3 +829,4 @@
 .stopwatch-buttons button:last-child {
   background-color: red;
 }
+

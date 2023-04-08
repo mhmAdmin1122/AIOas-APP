@@ -4,9 +4,9 @@ import eraseClearPic from "@/../public/img/erase.png";
 import Navbar from "@/../components/Navbar";
 import Footer from "@/../components/Footer";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 export default function TypingTool() {
-
   // hooks declearation
   const [text, setText] = useState("");
   const [textChange, setTextChange] = useState("Copy Text");
@@ -21,18 +21,22 @@ export default function TypingTool() {
   const minutes = Math.floor((time % 360000) / 6000);
   const seconds = Math.floor((time % 6000) / 100);
   const milliseconds = time % 100;
-
+  const minutesRead = 0.008 * wordCount;
   // function handler
 
   const startAndStop = () => {
-    setIsRunning(!isRunning);
+    if (text === "") {
+      setIsRunning(!isRunning);
+    } else {
+      setIsRunning(isRunning);
+    }
   };
   const reset = () => {
     setTime(0);
   };
   const handleOnChange = (e: any) => {
     setText(e.target.value);
-    startAndStop()
+    startAndStop();
   };
   const UpperCaseClick = () => {
     setText(UpperCase);
@@ -49,8 +53,8 @@ export default function TypingTool() {
   };
   const ClearForm = () => {
     setText("");
+    setIsRunning(!isRunning);
     reset();
-    startAndStop()
   };
 
   //   useEffect Hook
@@ -69,7 +73,7 @@ export default function TypingTool() {
   }, [text]);
 
   useEffect(() => {
-    let intervalId:any;
+    let intervalId: any;
     if (isRunning) {
       intervalId = setInterval(() => setTime(time + 1), 10);
     }
@@ -79,6 +83,9 @@ export default function TypingTool() {
   // layout
   return (
     <>
+      <Head>
+        <title>Typing Speed || AIOas</title>
+      </Head>
       <Navbar />
 
       <div className="container my-4">
@@ -117,29 +124,42 @@ export default function TypingTool() {
             <div className="timerContainer position-absolute">
               <div className="container">
                 <p className="timer">
-                  {minutes < 10 ? "0" + minutes : minutes}:
-                  {seconds < 10 ? "0" + seconds : seconds}:
-                  {milliseconds < 10 ? "0" + milliseconds : milliseconds}
+                  {minutes < 10 ? "0" + minutes : minutes}m:
+                  {seconds < 10 ? "0" + seconds : seconds}s:
+                  {milliseconds < 10 ? "0" + milliseconds : milliseconds}ms
                 </p>
               </div>
             </div>
+            
           </div>
         </div>
 
-        <textarea
-          className="typing-Area"
-          placeholder="Start your typing..."
-          id="floatingTextarea2"
-          value={text}
-          onChange={handleOnChange}
-        ></textarea>
+        <div className="container typingFormBox">
+          <textarea
+            className="typing-Area"
+            placeholder="Start your typing..."
+            id="floatingTextarea2"
+            value={text}
+            onChange={handleOnChange}
+          ></textarea>
 
-        <div className="textSummaryBox">
-          <h1>text Summary</h1>
-          <p>
-            {wordCount} words and {charCount} Characters
-          </p>
-          <p>{0.008 * wordCount} Minutes Read</p>
+          <div className="textSummaryBox">
+            <h1>Typing Summary</h1>
+            <h2>
+              <p>Words </p>
+              <b>{wordCount}</b>
+            </h2>
+            <h2>
+              <p>Characters </p>
+              <b>{charCount}</b>
+            </h2>
+            <h2>
+              <p>Minutes Read </p>
+              <b>
+                {minutesRead > 0.55 ? Math.round(minutesRead) : minutesRead}
+              </b>
+            </h2>
+          </div>
         </div>
       </div>
 
