@@ -36,6 +36,9 @@ export default function allTools() {
           <li className="toolsList">
             <Link href="/Button-Builder-Bootstrap">Button-Builder Bootstrap</Link>
           </li>
+          <li className="toolsList">
+            <Link href="/ButtonBuilderMainBody">Button Builder All Type</Link>
+          </li>
         </ul>
       </div>
     </>

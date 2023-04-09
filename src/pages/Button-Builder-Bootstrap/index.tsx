@@ -56,14 +56,14 @@ export default function index() {
       setAllSidePadding(`p-${paddSelecterTop}`);
     } else if (paddSelecterTop === paddSelecterBottom) {
       setTopBottomPadding(`py-${paddSelecterTop}`);
-    }else if(
+    } else if (
       paddSelecterTop !== paddSelecterRight &&
       paddSelecterTop !== paddSelecterBottom &&
       paddSelecterTop !== paddSelecterLeft
-    ){
-      setAllSidePadding('p-auto');
-    }else if(paddSelecterTop !== paddSelecterBottom){
-      setTopBottomPadding('py-auto');
+    ) {
+      setAllSidePadding("p-auto");
+    } else if (paddSelecterTop !== paddSelecterBottom) {
+      setTopBottomPadding("py-auto");
     }
   });
   //   bootstrap padding bottom
@@ -84,7 +84,6 @@ export default function index() {
   });
   //   bootstrap padding right
   useEffect(() => {
-
     if (paddSelecterRight == 5) {
       setPaddingRightClassBtStrap("pe-5");
     } else if (paddSelecterRight == 4) {
@@ -97,12 +96,12 @@ export default function index() {
       setPaddingRightClassBtStrap("pe-1");
     } else {
       setPaddingRightClassBtStrap("pe-auto");
-    };
+    }
 
     if (paddSelecterRight === paddSelecterLeft) {
       setLeftRightPadding(`px-${paddSelecterRight}`);
-    }else if(paddSelecterRight !== paddSelecterLeft){
-      setLeftRightPadding('px-auto');
+    } else if (paddSelecterRight !== paddSelecterLeft) {
+      setLeftRightPadding("px-auto");
     }
   });
   //   bootstrap padding left
@@ -126,6 +125,7 @@ export default function index() {
     <>
       <div className="button_BootS_Builder_MainBox">
         <div className="conatiner BuilderButtonBox">
+
           <div className="BTNBuilderBoxModule">
             <div className="moduleBox">
               <div className="marginModuleBox">
@@ -252,6 +252,7 @@ export default function index() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </>
