@@ -30,6 +30,12 @@ export default function allTools() {
           <li className="toolsList">
             <Link href="/TypingTools">Typing Tool</Link>
           </li>
+          <li className="toolsList">
+            <Link href="/Button-Builder">Button Builder</Link>
+          </li>
+          <li className="toolsList">
+            <Link href="/Button-Builder-Bootstrap">Button-Builder Bootstrap</Link>
+          </li>
         </ul>
       </div>
     </>

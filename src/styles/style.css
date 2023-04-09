@@ -829,4 +829,336 @@ a{
 .stopwatch-buttons button:last-child {
   background-color: red;
 }
+.htmlCodeBox, .cssCodeBox{
+  padding: 12px;
+  border: 2px solid #6500a5;
+  border-radius: 12px;
+  margin: 12px 0px;
+  outline: none;
+}
+.TagIcon{
+  color: red;
+  font-weight: 600;
+  font-size: 24px;
+}
+.tagName{
+  color: #000;
+  font-weight: 600;
+  font-size: 24px;
+}
+.TagPlaceHolder{
+  font-size: 26px;
+  font-weight: 600;
 
+}
+.styleBoxPropety{
+  margin: 0px 0px 0px 22px;
+}
+.styledTagName{
+  font-size: 28px;
+  font-weight: 600;
+  color: #6500a5;
+}
+.curlyBracket{
+  color: red;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.slecterCssBox{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.customSlecterContainer{
+  border-right: 2px solid #000;
+  padding-right: 12px;
+  height: 300px;
+}
+.BootsrapSelecter{
+  border-left: 2px solid #000;
+  padding-left: 12px;
+  height: 300px;
+}
+.slecterBtsrpBox{
+  margin: 12px 0px;
+}
+.BtnBoxModal {
+  width: 720px;
+  height: 620px;
+  padding: 15px;
+  display: grid;
+  background: #f0eeee;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.marginDeclearBox {
+  width: 612px;
+  height: 473px;
+  background: #ffca9b;
+  border: 1px dashed #000000;
+  border-radius: 12px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.marginDeclearBox h2, .borderdeclearBox h2, .paddingDeclearBox h2{
+  font-size: 16px;
+  margin: 6px;
+}
+.borderdeclearBox {
+  width: 452px;
+  height: 314px;
+  background: #ffdb9a;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 40px;
+}
+.paddingDeclearBox {
+  width: 361px;
+  height: 180px;
+  background: #bbcf8c;
+  border: 1px dashed #000000;
+  border-radius: 12px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.widthHeightDeclearBox {
+  width: 251px;
+  height: 50px;
+  background: #78b7c1;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  padding: 9px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.cssPropertValueDeclearer{
+  padding: 12px;
+  background: #4c7bfe;
+  border-radius: 12px;
+  margin: 6px 0px;
+  width: 150px;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+.topSide {
+  top: 0px;
+  right: 38%;
+}
+.leftSide, .rightSide{
+  display: grid !important;
+  justify-items: center;
+  width: 51px;
+  top: 38%;
+}
+.rightSide {
+  right: 12px;
+}
+.leftSide{
+  left: 12px;
+}
+.bottomSide {
+  bottom: 0px;
+  right: 38%;
+}
+.brdrtopSide, .brdrrightSide, .brdrbottomSide, .brdrleftSide{
+  background-color: #5c00a7;
+  color: #fff;
+}
+.brdrtopSide, .brdrbottomSide{
+  right: 34%;
+}
+.brdrtopSide{
+  top: 0px;
+}
+.brdrbottomSide{
+  bottom: 0px;
+}
+.brdrrightSide, .brdrleftSide{
+  width: 40px;
+  justify-items: center;
+  display: grid;
+  top: 32%;
+}
+.brdrrightSide{
+  right: 3px;
+}
+.brdrleftSide{
+  left: 2px;
+  width: 35px;
+}
+.paddtopSide, .paddrightSide, .paddbottomSide, .paddleftSide{
+  background-color: #a50081;
+  color: #fff;
+}
+.paddtopSide, .paddbottomSide{
+  height: 40px;
+  right: 29%;
+}
+.paddleftSide, .paddrightSide{
+  width: 35px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  top: 16%;
+}
+.paddtopSide{
+  top: 0px;
+}
+.paddbottomSide{
+  bottom: 0px;
+}
+.paddleftSide{
+  left: 6px;
+}
+.paddrightSide{
+  right: 6px;
+}
+.buttonBuilderBox{
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+}
+.reusltBox_Btn{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6500a5;
+  background: #6500a5;
+  margin: 0px 6px;
+}
+.btnWidthHeightDecider{
+  display: flex;
+}
+.btnDescider{
+  width: 90px;
+  margin: 0px 6px;
+}
+
+.marginValues, .bdrValues, .paddValues, .boxName{
+  width: 30px;
+  outline: none;
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  border-bottom: 0px solid #000;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.marginModuleBox{
+  width: 300px;
+  height: 300px;
+  background: #ffca9b;
+  position: relative;
+  padding: 6px;
+  margin: 12px 0px;
+  border: 2px dashed #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.borderModuleBox{
+  width: 225px;
+  height: 225px;
+  background: #ffdb9a;
+  position: relative;
+  padding: 6px;
+  border: 2px solid #000;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.paddingModuleBox{
+  width: 140px;
+  height: 140px;
+  background: #bbcf8c;
+  position: relative;
+  padding: 6px;
+  border: 2px dashed #000;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.widthHeightModuleBox{
+  width: 70px;
+  height: 70px;
+  background: #78b7c1;
+  position: relative;
+  padding: 6px;
+  border: 2px solid #000;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+
+}
+.mtopValue, .btopValue, .ptopValue{
+  top: 2%;
+}
+.mtopValue, .mbottomValue{
+  right: 43%;
+}
+.btopValue, .bbottomValue{
+  right: 41%;
+}
+.ptopValue, .pbottomValue{
+  right: 35%;
+}
+.mrightValue, .brightValue, .prightValue{
+  right: 0.3%;
+}
+.mbottomValue, .bbottomValue, .pbottomValue{
+  bottom: 2%;
+}
+.boxName{
+  top: 2%;
+  left: 4%;
+  margin: 0px;
+  border: none;
+  font-size: 11px;
+  color: #000;
+}
+.widthvalue{
+  font-size: 12px;
+}
+.marginValues:before, .bdrValues:before, .paddValues:before,
+.marginValues:before, .bdrValues:before, .paddValues:before {
+  content: "";
+  position: absolute;
+  background: #201f20;
+  left: 0px;
+  bottom: 0px;
+  width: 3px;
+  height: 4px;
+  border-radius: 4px;
+  transition: 0.5s all ease-in-out;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
