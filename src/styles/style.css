@@ -1252,3 +1252,39 @@ input::-webkit-inner-spin-button {
 .htmlCodeBox{
   max-width: 500px;
 }
+.main-contentBox {
+  width: 518px;
+  height: 485px;
+  background: #fff;
+  color: rgb(3, 3, 3);
+  cursor: text;
+  border: 2px solid #e9e9e9;
+  border-radius: 12px 12px 0px 0px;
+  outline: none;
+  box-shadow: -3px 20px 35px #b9b5b5 inset, 10px -10px 57px #dddbdb;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: cursive;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.speechToolControlePanel {
+  background: #ececec;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: none;
+  border-radius: 0px 0px 12px 12px;
+  width: 517px;
+  border-bottom: 8px solid #6500a5;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-contentBox::-webkit-scrollbar{
+  width: 6px;
+}
+.main-contentBox::-webkit-scrollbar-thumb{
+  width: 6px;
+  background-color: #6500a5;
+  border-radius: 12px;
+}

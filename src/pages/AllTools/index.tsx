@@ -39,6 +39,9 @@ export default function allTools() {
           <li className="toolsList">
             <Link href="/ButtonBuilderMainBody">Button Builder All Type</Link>
           </li>
+          <li className="toolsList">
+            <Link href="/SpeechToWrite">speech to write tool</Link>
+          </li>
         </ul>
       </div>
     </>
